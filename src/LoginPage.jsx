@@ -28,7 +28,7 @@ function LoginPage() {
             }}
               type="email" 
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-              placeholder= {bool ? "customer@customer.com" : "admin@admin.com"}
+              placeholder= {bool ? "" : "admin@admin.com"}
             />
           </div>
           <div className="mb-4">
@@ -41,7 +41,7 @@ function LoginPage() {
             }}
               type="password" 
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-              placeholder={bool ? "customer123" :"admin123"}
+              placeholder={bool ? "" :"admin123"}
             />
           </div>
           <button 
@@ -57,7 +57,6 @@ function LoginPage() {
                     }
                     return false ; 
                 })
-                console.log ( "newUser = " , newuser );
 
 
                 if (newuser.length>0) {
